@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript | Op. Lógicos</title>
+</head>
+
+<body>
+    <h1>Operadores Lógicos</h1>
+
+    <p>
+        Documentação sobre operadores lógicos no JS.
+    </p>
+
+    <p>
+        *O conteúdo da documentação está disponível para visualização, no código.
+    </p>
+
+    <script>
+        //Sinal de negação para booleanos
+        //No JS, é possível negar um valor booleano. Um valor true pode vir a se tornar false e vice versa. Para fazer isto, deve-se utilizar o sinal de esclamação antes do nome da variável.
+        //Ex. 
+        var a = true;
+        var b = false;
+
+        console.log(!a);
+        console.log(!b);
+        //Também é possível realizar a dupla negação. Como assim ? Como o proprio nome diz, você irá negar o valor duas vezes. Com isto, após a dupla negação, a variável irá retornar ao valor original.
+
+        console.log(!!a);
+        console.log(!!b);
+
+        //Alguns valores, por padrão, funcionam como se fossem valores falsos.
+        //Exemplo:
+        // null, undefined, '', false, 0. 
+        // A '' é a representação de uma string vazia.
+        //Com os sinas de negação, é possível torna-los verdadeiros, true. Caso seja necessário, aplica-se a dupla negação tornando-os falsos, ou false.
+        
+        console.log(null); // null
+        console.log(!null); // true
+        console.log(!!null); // false
+
+        console.log(undefined); // undefined (não definido)
+        console.log(!undefined); // true
+        console.log(!!undefined); // false
+
+        console.log(''); // Vazio
+        console.log(!''); // true
+        console.log(!!''); // false
+
+        console.log(false); // false
+        console.log(!false); // true
+        console.log(!!false); // false
+
+        console.log(0); // 0
+        console.log(!0); // true
+        console.log(!!0); // false
+
+        //Por padrão, a maioria dos valores que se pode atribuir a uma variável, são verdadeiros.
+        //Ex. 20, 'Olá', true, 15.6,...
+
+        // Operador AND - &&
+        // O operador AND é utilizado como uma forma de verificar se duas operações são verdadeiras ou não.
+        //Ex.
+        console.log(5 > 3 && '');
+        console.log(10 == 10 && 25 < 30);
+        console.log(200 < 100 && 5*5 == 25);
+
+        //No operador AND, se todas as operações forem verdadeiras, irá retornar a útlima operação.
+
+        //Também existem os casos em que um valor utilizado é null, ou undefined, ou 0, ou uma string vazia ou algum que por padrão é falso, se estiver no início, a verificação não irá continuar até o proxímo valor depois do &&. Caso este valor null, undefined, 0 ou outro falso esteja no final, ele verifica o primeiro, e após passar para o segundo, verificando que é falso, não irá apresentar nenhum resultado, ao não ser o valor falso por padrão apresentado na operação.
+        
+        //Operador OU - ||
+        //No caso do ||, ele irá retornar um valor caso haja alguma operação que está sendo realizada que seja verdadeira. Caso uma das operações seja falsa, como por exemplo, null, mas a outra operação seja verdadeira, ele irá retornar o valor verdadeiro.
+        //Caso haja mais de uma ação a ser verificada, exemplo três, e duas sejam verdadeiras, na primeira verdadeira ele irá encerrar a verificação e irá mostrar o resultado.
+        //No caso de uma verificação com operações envolvendo booleanos e todas as operações sejam falsas, irá retornar o primeiro valor falso.
+        //Caso ele verifique operações falsas com por exemplo null || 0 || undefined, ele irá retornar o último valor falso.
+        //Ex.
+
+        var idade = 15;
+        var gostoFilme = 'Comédia';
+
+        function cinema() {
+            if (idade >= 18 || gostoFilme == 'Comédia') {
+                console.log('Pode entrar!')
+            } else {
+                console.log('Infelizmente você não irá entrar!')
+            }
+        }
+
+        console.log(cinema());
+
+        //Resumo de Operadores Lógicos
+        
+        // && - É utilizado para verificar se duas ou mais operações conjuntas são verdadeiras ou falsas
+        //Ex. 
+        console.log('Lucas' && 'Fernandes'); // Ambas verdadeiras
+        console.log('Lucas' && null); // Neste caso, apesar de o null ser falso, ele ao verificar 'Lucas' e ver que é verdadeiro, já encerra a verificação.
+        console.log(false && 'carro'); // Aqui ele verificará que false é um valor falso e já encerrará e mostrará o resultado, e não continuará até 'carro'.
+
+        // || -  O OU é utilizado para se uma ou mais opções são verdadeiras ou falsas.
+
+        //ex1 de ||
+
+        var idade = 10;
+        var time = 'Vasco';
+
+        function lucasFernandes() {
+            if (idade == 26 || time == 'Cruzeiro') {
+                console.log('Boa garoto!')
+            } else {
+                console.log('Não é Lucas')
+            }
+        }
+        
+        lucasFernandes();
+    </script>
+</body>
+</html>
