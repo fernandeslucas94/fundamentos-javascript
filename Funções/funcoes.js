@@ -27,3 +27,23 @@ function sum(n1, n2) {
 }
 
 console.log(sum(10, 5));
+
+
+/// Uma informação importante com relação à funções, é que qualquer função, somente será executada, ou "chamada", quando for requisitado seu nome juntamente ao parênteses. Como assim ? Vejamos no exemplo logo abaixo:
+
+
+/// Uma função sempre deve ser iniciada pela palavra function e seguida do seu nome e parênteses. Logo após os parênteses abre-se chaves, para indicar o bloco de código, ou o escopo da função, onde serão definadas as instruções que devem ser executadas quando a função for chamada.
+
+function nomeDaFuncao() {
+    /// E dentro das chaves, ou dentro do escopo da função, devemos indicar, ou definir, quais serão as instruções, ou códigos, que serão executados pela função.
+
+    let nome = `Lucas Feitosa Fernandes`;
+
+    return nome;
+}
+
+/// Logo após decladara a função e definidas as instruções que serão executadas, devemos "chamar" a função, para que ela efetivamente funcione e faça seu trabalho.
+
+nomeDaFuncao();
+
+/// Desta maneira, após ser "chamada", aí sim ela será executada, e consequentemente o código inserido em seu escopo.
