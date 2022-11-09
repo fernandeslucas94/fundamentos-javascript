@@ -1,8 +1,8 @@
 //Sinal de negação para booleanos
 //No JS, é possível negar um valor booleano. Um valor true pode vir a se tornar false e vice versa. Para fazer isto, deve-se utilizar o sinal de esclamação antes do nome da variável.
 //Ex. 
-var a = true;
-var b = false;
+let a = true;
+let b = false;
 
 console.log(!a);
 console.log(!b);

@@ -8,7 +8,7 @@
 
 //switch/case "normal"
 
-var cor = 'marrom';
+let cor = 'marrom';
 
 switch (cor) {
     case 'azul':
@@ -29,7 +29,7 @@ switch (cor) {
 
 //switch/case multi case
 
-var banda = 'john';
+let banda = 'john';
 
 switch (banda) {
     case 'john':

@@ -1,5 +1,5 @@
 //Exemplos
-var nome = 'Meu nome é Lucas'; // Neste caso, a variável nome está recebendo uma string como valor e nela está escrito Lucas.
+let nome = 'Meu nome é Lucas'; // Neste caso, a variável nome está recebendo uma string como valor e nela está escrito Lucas.
 
 //É possível verificar qual o tamanho da string, ou melhor, quantas letras estão contídas naquela string utilizando o método .length
 //Ex. 
@@ -33,7 +33,7 @@ console.log(nome.slice(5, 13));
 
 //Existe um método chamado .trim. que 'apaga' espaços que não sejam úteis e existam em uma string.
 //Ex.
-var profissao = '   sou desenvolvedor web   ';
+let profissao = '   sou desenvolvedor web   ';
 console.log(profissao.trim());
 
 console.log(profissao.trim());

@@ -17,8 +17,8 @@ console.log(3**3); // É igual a 3 ao cubo, ou 3 elevado a 3.
 
 //É possível também atribuir uma operação matemática a uma ou mais variáveis.
 //Ex.
-var a = 10;
-var b = 5;
+let a = 10;
+let b = 5;
 
 console.log(a+b);
 
@@ -31,20 +31,20 @@ console.log(10%3);
 //Incremento de número
 //É utilizado para incrementar um número no valor de outro número que já está sendo utilziado.
 //Ex.
-var a = 7;
+let c = 7;
 
-console.log(a++);
-console.log(a); // 8
+console.log(c++);
+console.log(c); // 8
 
 //ou 
 
-console.log(++a);
+console.log(++c);
 
 //Decremento de número
 //Ao contrário do incremento, é utilizado para decrementar, ou seja, diminuir um número no valor de outro número.
 //Ex.
 
-var b = 10
+let d = 10
 
 console.log(b--);
 console.log(b); // 9

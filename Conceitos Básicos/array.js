@@ -1,7 +1,7 @@
 //Array, também chamado de vetor, é um tipo de estrutura no JS que permite guardar diversos valores, semelhante a uma lista.
 //Ex. 1
 
-var num = [1, 2, 3, 5, 10]; 
+let num = [1, 2, 3, 5, 10]; 
 console.log(num); // O console imprime o indicativo Array e diz quantos ítens estão contidos nele. No caso 5, pois lembrando, no JS, a contagem começa no 0.
 
 console.log(num.length); // O length, é usado para 'medir' o array, retornando o número de ítens que aquele array contem.
@@ -27,8 +27,8 @@ console.log(num.includes(3)); // O método includes() é usado para verificar se
 
 //Método .concat() - Abaixo
 
-var arr1 = ['Lucas', 'Feitosa', 'Fernandes']
-var arr2 = ['Helena', 'Mariazinha', 'Chiquinha']
+let arr1 = ['Lucas', 'Feitosa', 'Fernandes']
+let arr2 = ['Helena', 'Mariazinha', 'Chiquinha']
 
 console.log(arr1.concat(arr2));
 // O Método .concat() é usado para mesclar dois arrays. Coloca-se o nome da variável do primeiro array, depois .concat() e dentro parênteses coloca-se o array a ser concatenado, ou seja, mesclado, ou também é possível adicionar entre os parênteses o array propriamente dito.
@@ -54,8 +54,8 @@ console.log([...arr1, ...arr2, ...['Este', 'é', 'um exemplo', 'de concatenaçã
 //Array Destructuring
 // É uma forma de estrair do array, através do uso de variáveis, dados e valores de interesse.
 
-var nome = arr1[1];
-var sobrenome = arr1[2];
+let nome = arr1[1];
+let sobrenome = arr1[2];
 
 console.log(nome, sobrenome);
 
