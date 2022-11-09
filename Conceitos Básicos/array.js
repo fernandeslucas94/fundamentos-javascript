@@ -1,4 +1,4 @@
-//Array, também chamado de matriz, é um tipo de estrutura no JS que permite guardar diversos valores, semelhante a uma lista.
+//Array, também chamado de vetor, é um tipo de estrutura no JS que permite guardar diversos valores, semelhante a uma lista.
 //Ex. 1
 
 var num = [1, 2, 3, 5, 10]; 
