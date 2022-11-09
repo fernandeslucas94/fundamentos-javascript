@@ -2,12 +2,12 @@
 // O loop WHILE é utilizado para que seja feita a verificação de uma ou mais condições. Enquanto uma condição não for satisfeita, ele irá continuar realizando a contagem, a verificação.
 // O WHILE é recomenadado quando não se saiba qual será o resultado final daquela operação. Caso se saiba o resultado que será entregue, deve-se usar o loop FOR 
 
-// let numero = 0;
+let numero = 0;
 
-// while (numero < 10) {
-//     ++numero;
-//     console.log(`O número agora é: ${numero}`);
-// }
+while (numero < 10) {
+    ++numero;
+    console.log(`O número agora é: ${numero}`);
+}
 
 // Ping Pong - While
 let contador = 0;
