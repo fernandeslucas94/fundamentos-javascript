@@ -25,7 +25,7 @@ cinema(35);
 //
 /// Uma função, por padrão, deve conter apenas um return. Não mais que isto!
 //
-/// Mas no caso do retorno condicional, como estamos fazendo uma verificação de uma ou mais condições, neste caso, podemos utilizar mais de um return. Pois, queremos que caso a primeira condição seja satisfeita, ela irá retorna alguma mensagem ou dado para o usuário. Mas caso ela não seja satisfeita, e a execução do código siga para a verificação seguinte, queremos que esta próxima verificação, retorno alguma informação para o usuário.
+/// Mas no caso do retorno condicional, como estamos fazendo uma verificação de uma ou mais condições, neste caso, podemos utilizar mais de um return. Pois, queremos que caso a primeira condição seja satisfeita, ela irá retorna alguma mensagem ou dado para o usuário. Mas caso ela não seja satisfeita, e a execução do código siga para a verificação seguinte, queremos que esta próxima verificação, retorne alguma informação para o usuário.
 
 // Exemplo 2
 
