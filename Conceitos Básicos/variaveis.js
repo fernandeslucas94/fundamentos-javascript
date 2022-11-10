@@ -20,3 +20,8 @@ let segundoNome = "Feitosa";
 const nomeCompleto = `${primeiroNome} ${segundoNome}`;
 
 console.log(nomeCompleto);
+
+/// Anteriormente falamos sobre escopo, mas o que seria isto ? Por escopo, podemos compreender o local, a área em específico, a região do código, onde a variável foi declarada. Vamos tomar uma função como exemplo: Após declararmos a função, dentro das chaves, iremos inserir o código que desejamos que seja executado quando a função for requisitada, correto ? Desta forma, o que estiver dentro das chaves, está inserido no escopo local da variável. Ou seja, somente a função onde a variável foi declarada, pode ter acesso a ela e realizar alguma operação com a variável! Se caso, desejemos utilizar a variável que foi declarada dentro da função, em um outro local do código que esteja fora do escopo da função, a variável não poderá ser requisitada, e se utilizarmos o console.log para tentar apresentar o valor da variável, irá aparecer como resultado undefined.
+
+// Para compreender melhor sobre variáveis e suas particularidades, recomendo o acesso ao seguinte vídeo: 
+// https://www.youtube.com/watch?v=SpLTLZmrcjo&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw&index=6&ab_channel=Programa%C3%A7%C3%A3oWeb
