@@ -22,6 +22,9 @@ const nomeCompleto = `${primeiroNome} ${segundoNome}`;
 console.log(nomeCompleto);
 
 /// Anteriormente falamos sobre escopo, mas o que seria isto ? Por escopo, podemos compreender o local, a área em específico, a região do código, onde a variável foi declarada. Vamos tomar uma função como exemplo: Após declararmos a função, dentro das chaves, iremos inserir o código que desejamos que seja executado quando a função for requisitada, correto ? Desta forma, o que estiver dentro das chaves, está inserido no escopo local da variável. Ou seja, somente a função onde a variável foi declarada, pode ter acesso a ela e realizar alguma operação com a variável! Se caso, desejemos utilizar a variável que foi declarada dentro da função, em um outro local do código que esteja fora do escopo da função, a variável não poderá ser requisitada, e se utilizarmos o console.log para tentar apresentar o valor da variável, irá aparecer como resultado undefined.
+//
+/// No caso de declararmos uma variável com let, ela estando fora de uma função, por exemplo, neste caso, podemos utilizá-la em outras partes do nosso código. Mas isto não quer dizer que ela tenha suas características iguais ao var. Pois, no caso do var, nós podemos redeclarar a variável, em um momento posterior do nosso código, alterando o valor, e/ou alterando o tipo de dado, e isto será permitido.
+// Mas no caso do let, ele não permite que uma variável já declarada, seja redeclarada em um momento posterior no código, evitando com isto, que erros possam ocorrer. Podemos atribuir um valor diferente para uma variável já declara utilizando o let ? Sim. Mas utilizando let, nós temos mais segurança na utilização das variáveis, evitando possíveis erros! 
 
 // Para compreender melhor sobre variáveis e suas particularidades, recomendo o acesso ao seguinte vídeo: 
 // https://www.youtube.com/watch?v=SpLTLZmrcjo&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw&index=6&ab_channel=Programa%C3%A7%C3%A3oWeb
