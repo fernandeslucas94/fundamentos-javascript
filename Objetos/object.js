@@ -50,11 +50,10 @@ let carro = {
     anoFabricacao: 2022,
     anoModelo: 2023,
     cor: "Preto",
-    motor: () => {
-        let combustivel = true;
-        let manutencaoEmDIa = true;
-        let ligarCarro = combustivel && manutencaoEmDIa == true ? "Carro Ligado" : "Carro não poderá ligar";
-        
+    combustivel: true,
+    manutencaoEmDIa: true,
+    motor: function () {
+        let ligarCarro = this.combustivel && this.manutencaoEmDIa == true ? "Carro Ligado" : "Carro não poderá ligar";
         return ligarCarro;
     }
 };
@@ -63,3 +62,7 @@ console.log(carro.motor());
 
 
 /// Como vimos no exemplo acima, utilizando um carro para exemplificar o conceito, utilizamos uma função para representar o motor do carro. E este é um exemplo o qual podemos ver mais claramente como é possível utilizar funções dentro de objetos no Javascript!
+//
+/// Podemos utilizar função em um objeto de duas maneiras: com arrow function, e também utilizando a forma tradicional de escrevermos funções, utilizando a sintaxe function () {}! No caso do objeto, não precisamos escrever: function motor() {}, pois a chave, neste caso, motor, já é o nome da função. Desta maneira, somente precisamos escrever a palavra function, seguida dos parênteses e das chaves.
+//
+/// Utilizando a sintaxe tradicional, motor: function () {}, dentro das chaves da função, precisamos utilizar a palavra chave this, pois desta maneira, estaremos fazendo referência às chaves que estão presentes dentro do objeto!
