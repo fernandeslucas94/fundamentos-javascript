@@ -25,3 +25,35 @@ for(let i = 0; i < nomes.length; i++) {
 /// Pode parecer confuso, mas é mais simples que parece. A cada vez que o FOR "rodar", a variável i irá receber um novo valor. Ex: 0 (Na primeira vez), 1 (Na segunda vez), e assim por diante. E a cada vez que o FOR rodar, ele irá "trazer" do array o item que estiver no indice, ou seja, na posição, no número da vez a qual o FOR estiver sendo executado! 
 //
 /// Ex: 0(Primeira execução do FOR) - Sohpia, 1(Segunda execução do FOR) - Maria Luiza, e assim em diante!
+
+/// Agora nós iremos conhecer melhor sobre como podemos realizar loops com o for em array! Como fazer isto ? Explicarei logo abaixo!
+//
+/// Temos três maneiras, basicamente, de realizar um loop com o FOR em arrays. E são eles: a maneira tradicional, como já vimos no exemplo acima, também podemos utilizar o for..in e o for..of!
+//
+/// Primeiramente vamos recapitular a maneira mais básica e tradicional de realizamos loop com FOR em array.
+//
+/// Vamos ver o exemplo abaixo:
+
+// Neste exemplo, iremos ter um array contendo diversos números. Iremos adicionar uma condicional para que caso o número seja divisível por 2, retorne par, caso seja divisível por 3 ou 5, retorne ímpar!
+
+let numeros = [2, 7, 9, 12, 26, 56, 90, 0, 3, 237.5]; 
+
+for(let i = 0; i < numeros.length; i++) {
+    if(numeros[i] % 2 === 0) {
+        console.log(`${numeros[i]} é par!`)
+    } 
+
+    if (numeros[i] % 3 === 0) {
+        console.log(`${numeros[i]} é impar!`)
+    }
+}
+
+/// Como pudermos ver, dentro das chaves do FOR, colocamos o trecho de código o qual desejamos que seja repetido, ou que haja algum tipo de iteração!
+//
+/// Explicando melhor o exemplo, dado o array com os dez números, dentro da área de definição de condicional do FOR, declaramos uma variável com o valor inicial de zero, logo após, definimos que enquanto esta variável possuir valor inferior ao número de ítens do array, o FOR deverá rodar mais uma vez. Na primeira vez que ele rodar, quando o i valer zero, ele vai pegar primeiramente o número 2, que está na posição zero, irá verificar as condições com o IF, depois, quando finalizar a checagem, o FOR irá rodar mais uma vez, desta vez valendo um, sendo assim, irá "pegar" o número 7, que está na posição um do array, e irá realizar a checagem com o IF e assim por diante com os itens restantes no array!
+//
+/// Vamos ver agora, mais duas maneiras de utilizarmos o FOR: for..in e for..of!
+//
+/// FOR..IN
+//
+/// 
