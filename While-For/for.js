@@ -56,4 +56,34 @@ for(let i = 0; i < numeros.length; i++) {
 //
 /// FOR..IN
 //
-/// 
+/// Ao utilizarmos o for..in, podemos obter resultados semelhantes aos quais obtemos ao utilizar o for da maneira tradicional. A diferença maior que poderemos perceber, é que ao utilizarmos o for..in, iremos escrever menos código, iremos ter menos espaço na memória sendo ocupado, o que, por sua vez, irá trazer uma maior performance para nossa aplicação. Mas esta diferença é perseptível ? É algo que irá mudar drasticamente o funcionamento de nossa aplicação ? Talvez, não! Mas para nós, durante nosso dia a dia de trabalho, possibilitará um maior aproveitamento de tempo, possibilitando com isto, que possamos realizar nossas atividades programadas, em um menor tempo!
+//
+/// Veremos logo abaixo  um exemplo sobre como podemos utilizar o for..in ao invés do for tradicional.
+//
+//
+/// Exemplo 3
+
+for(let i in nomes) {
+    console.log(`O nome é: ${nomes[i]}`);
+}
+//
+//
+/// Veremos agora um pouco sobre outra maneira de utilizamos o for, que é utilizando o for..of!
+//
+/// O for..of, semelhante ao for..in, não é necessário atribuir um valor para a variável, não é necessário informar uma condicional e também não precisamos informar qual operação deve ser realizada, incremento de um em um, dois em dois, decremento, ou qualquer que seja. Ele por conta própria, tal qual o for..in, já traz estas informações por conhecimento.
+//
+/// No caso do for..of, quando o FOR for renderizado, ele irá verificar qual valor está presente na posição em questão, no array, seja 0, 1, 2, etc..., e dentro das chaves, devemos definir qual operação que esperamos que seja realizada quando aquele item por recebido como valor da variável declarada no FOR! 
+//
+/// No for..in, ele irá mostrar qual o valor em questão que está presente na posição do momento da variável i, no caso! No for..of, ele irá trazer o valor da posição no array, mas deverá ser realizada alguma operação utilizando o valor do momento. Seja uma operação matemática, uma verificação, validaçao, etc...!
+//
+/// Vejamos logo abaixo, em um outro exemplo, a utilização do for..of!
+
+for(let i of nomes) {
+    if(nomes.includes("Sophia")) {
+        console.log(`Este nome está presente neste array!`);
+        break;
+    } else {
+        console.log(`Não encontramos o valor em questão!`);
+        break;
+    }
+}
