@@ -13,18 +13,14 @@ while (numero < 10) {
 let contador = 0;
 
 while (contador <= 100) {
-    
     if (contador % 3 === 0 && contador % 5 === 0) {
         console.log(`${contador} - Ping Pong`);
     } 
-    
     if (contador % 3 === 0) {
     console.log(`${contador} - Ping`);
     } 
-    
     if (contador % 5 === 0) {
     console.log(`${contador} - Pong`);
     }
-
     ++contador; // Não esquecer do ++contador, pois sem ele, o código entra em loop infinito.
 }

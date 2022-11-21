@@ -17,11 +17,14 @@ console.log(num);
 console.log(num.shift()); // O método shift() retira o primeiro número ou elemento do array.
 console.log(num);
 
+console.log(num.unshift(0)); // O método unshift(), ao contrário do shit() o qual remove o primeiro item do array, adiciona algum item como primeiro valor do array! 
+console.log(num);
+
 console.log(num.slice(1, 3)); // O método slice() irá retornar uma 'fatia' do array. É necessário adicionar primeiro a posição do primeiro elemento que se quer saber e uma posição posterior do último elemento que queira que deva ser mostrado. Por quê uma posição posterior ? Pois se for usado o número exato da posição do útlimo elemento a ser mostrado, será retornado o elemento antecessor do último elemento que está sendo requisitado.
 
 console.log(num.join(' ')); // O método join() pode ser utilizado para adicionar espaços, traços ou algo que se queira adicionar entre os elementos do array.
 
-console.log(num.indexOf(1)); // O método index.Of() irá retornar a posição de um elemento no array. Deve-se adicionar entre os parênteses, o nome do elemento que se quer saber a posição.
+console.log(num.indexOf(0)); // O método index.Of() irá retornar a posição de um elemento no array. Deve-se adicionar entre os parênteses, o nome do elemento que se quer saber a posição.
 
 console.log(num.includes(3)); // O método includes() é usado para verificar se determinado valor existe, ou seja, se o valor está contido no array.
 
