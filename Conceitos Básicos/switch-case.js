@@ -1,4 +1,3 @@
-
 // Switch Case é uma 'forma' de realizar um IF/ELSE de outra maneira.
 // O código irá checar valores diferentes para verificar se irão ou não ser compatíveis com o valor, ou valores, requisitados como padrão.
 // O switch é utilizado para que seja informada uma variável que recebe o valor a ser verificado
@@ -8,7 +7,7 @@
 
 //switch/case "normal"
 
-let cor = 'marrom';
+let cor = 'verde';
 
 switch (cor) {
     case 'azul':

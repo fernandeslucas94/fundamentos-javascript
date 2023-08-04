@@ -1,4 +1,3 @@
-
 // O loop WHILE é utilizado para que seja feita a verificação de uma ou mais condições. Enquanto uma condição não for satisfeita, ele irá continuar realizando a contagem, a verificação.
 // O WHILE é recomenadado quando não se saiba qual será o resultado final daquela operação. Caso se saiba o resultado que será entregue, deve-se usar o loop FOR 
 

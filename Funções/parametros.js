@@ -21,7 +21,6 @@ mostrarNome("Lucas", "Fernandes");
 
 function mediaNumeros(n1, n2, n3) {
     let calculoMedia = (n1 + n2 + n3) / 3;
-    
     return console.log(calculoMedia.toFixed(1));
 }
 

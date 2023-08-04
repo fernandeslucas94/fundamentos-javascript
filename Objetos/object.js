@@ -47,9 +47,10 @@ console.log(isMember);
 let carro = {
     nome: "Compass",
     montadora: "Jeep",
-    anoFabricacao: 2022,
+    anoFabricacao: 2023,
     anoModelo: 2023,
-    cor: "Preto",
+    cor: "Prata",
+    modelo: "Longitude",
     combustivel: true,
     manutencaoEmDIa: true,
     motor: function () {

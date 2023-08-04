@@ -1,6 +1,6 @@
 /// Uma função, pode existir sem que haja um retorno ? Sim, pode! Mas isto não é uma regra. Uma função, como o próprio nome diz, precisa exercer alguma função específica no código. Pois, se assim não ocorrer, não há o porque de existir tal função.
 //
-/// Sendo assim, após a função executar o código que lhe é solicitado, ela deve retornar para a aplicação, e consequentemente para o usuário, alguma informação específica. E para que isto ocorra, após utilizamos ao final do escopo da função, após finalizarmos todas as operações que desejamos que sejam realizadas, a palavra reservada "return". 
+/// Sendo assim, após a função executar o código que lhe é solicitado, ela deve retornar para a aplicação, e consequentemente para o usuário, alguma informação específica. E para que isto ocorra, utilizamos ao final do escopo da função, após finalizarmos todas as operações que desejamos que sejam realizadas, a palavra reservada "return". 
 //
 /// Desta maneira, ao ser executada a função, após serem realizadas todas as operações que a função deve executar, ela irá retornar algum resultado final esperado.
 

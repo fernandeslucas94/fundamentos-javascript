@@ -7,13 +7,12 @@
 // Exemplo 1
 /// No exempo abaixo iremos ver o básico de função. Um caso onde uma string é armazenada em uma variável, e logo após, utilizamos a palavra return para determinar que, como diz o nome, queremos que a função "retorne" o valor da variável.
 
-function showName() {
-    let name = `Lucas Feitosa Fernandes`;
-
+function showName(firstName, lastName) {
+    let name = `${firstName} ${lastName}`;
     return name;
 }
 
-console.log(showName());
+console.log(showName("Lucas", "Feitosa Fernandes"));
 
 
 // Exemplo 2
@@ -22,7 +21,6 @@ console.log(showName());
 /// O que são parâmetros ? Parâmetros são informações que serão solicitadas ao usuário pela aplicação, e desejamos que sejam executadas pela função. Sejam cálculos, como o exemplo, sejam nomes, etc...
 function sum(n1, n2) {
     let soma = n1 + n2;
-
     return soma;
 }
 
@@ -38,12 +36,11 @@ function nomeDaFuncao() {
     /// E dentro das chaves, ou dentro do escopo da função, devemos indicar, ou definir, quais serão as instruções, ou códigos, que serão executados pela função.
 
     let nome = `Lucas Feitosa Fernandes`;
-
     return nome;
 }
 
-/// Logo após decladara a função e definidas as instruções que serão executadas, devemos "chamar" a função, para que ela efetivamente funcione e faça seu trabalho.
+/// Logo após declarada a função e definidas as instruções que serão executadas, devemos "chamar" a função, para que ela efetivamente funcione e faça seu trabalho.
 
-nomeDaFuncao();
+console.log(nomeDaFuncao());
 
 /// Desta maneira, após ser "chamada", aí sim ela será executada, e consequentemente o código inserido em seu escopo.

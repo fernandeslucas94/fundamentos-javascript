@@ -28,6 +28,8 @@ console.log(num.indexOf(0)); // O método index.Of() irá retornar a posição d
 
 console.log(num.includes(3)); // O método includes() é usado para verificar se determinado valor existe, ou seja, se o valor está contido no array.
 
+console.log(num.sort()); // O método sort(), no caso de arrays que contenham como valores strings, ele irá alterar a posição dos itens para que eles sejam organizados em ordem alfabética. E no caso de array de números, ele irá ordenar em ordem ascendente!
+
 //Método .concat() - Abaixo
 
 let arr1 = ['Lucas', 'Feitosa', 'Fernandes']

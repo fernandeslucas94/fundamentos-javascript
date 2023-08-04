@@ -36,8 +36,6 @@ console.log(nome.slice(5, 13));
 let profissao = '   sou desenvolvedor web   ';
 console.log(profissao.trim());
 
-console.log(profissao.trim());
-
 //Para concatenar um texto com uma varíavel, pode-se escrever da seguinte maneira:
 console.log(nome + " " + 'e eu ' + profissao.trim());
 //Mas existe uma forma mais 'eficiente' e rápida de se utilizar chamada template strings e é a seguinte:
